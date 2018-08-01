@@ -1,2 +1,2 @@
 # project-Euler-Solutions
-Solutions for project Euler questions written in Java.
+Solutions for project Euler questions written in Java and C.
