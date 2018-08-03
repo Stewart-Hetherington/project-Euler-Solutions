@@ -4,6 +4,11 @@
 
 using namespace std;
 
+/*A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+ *Find the largest palindrome made from the product of two 3-digit numbers.
+ *
+ *Author: Stewart Hetherington.
+ */
 int main()
 {
     int greatest = 0;
@@ -16,12 +21,11 @@ int main()
                 reverse += sum.at(k);
             }
             if (reverse.compare(sum) == 0) {
-                stringstream sum1(sum);
                 
-                int newSum = 0;
-                sum1 >> newSum;
-                if(newSum > greatest) {
-                    greatest = newSum;
+                int palindrome;
+                std::stringstream(sum) >> palindrome;
+                if(palindrome > greatest) {
+                    greatest = palindrome;
                 }
             }
         }
